@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 (function() {
   var VoiceText, fs, voice;
 
-  require('../node_modules/coffee-script/register');
+  require('/app/node_modules/coffee-script/register');
 
   fs = require('fs');
 
