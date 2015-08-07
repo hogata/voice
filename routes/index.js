@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
     if (e) {
       console.error(e);
     }
-    return fs.writeFile('./test.wav', buf, 'binary', function(e) {
+    return fs.writeFile('/tmp/test.wav', buf, 'binary', function(e) {
       if (e) {
         return console.error(e);
       }
