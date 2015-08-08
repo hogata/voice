@@ -8,8 +8,9 @@ router.get('/', function(req, res, next) {
 (function() {
   var VoiceText, fs, voice;
 
-  require('../node_modules/coffee-script/register.js');
+//  require('../node_modules/coffee-script/register.js');
 
+  require('coffee-script');
 
   fs = require('fs');
 
@@ -36,8 +37,9 @@ router.get('/', function(req, res, next) {
 (function() {
   var T;
 
-  T = require('../node_modules/timbre');
+//  T = require('../node_modules/timbre');
 
+  T = require('timbre');
   (T("audio")).load("test.wav", function() {
     return this.play();
   });
