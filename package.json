@@ -13,8 +13,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "coffee-script": "~10.0.0",
-    "timbre": "~10.0.0"
+    "coffee-script": "1.9.3",
+    "timbre": "14.11.25"
   },
   "engines": {
     "node": "0.12.7",
