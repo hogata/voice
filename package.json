@@ -12,7 +12,9 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "coffee-script": "~10.0.0",
+    "timbre": "~10.0.0"
   },
   "engines": {
     "node": "0.12.7",
