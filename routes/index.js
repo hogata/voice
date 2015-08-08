@@ -10,14 +10,15 @@ router.get('/', function(req, res, next) {
 (function() {
   var VoiceText, fs, voice;
 
-  require('../node_modules2/coffee-script/register.js');
+//  require('../node_modules2/coffee-script/register.js');
 
-//  require('coffee-script');
+  require('register');
 
   fs = require('fs');
 
-  VoiceText = require('../node_modules2/voicetext');
+//  VoiceText = require('../node_modules2/voicetext');
 
+  VoiceText = require('voicetext');
   voice = new VoiceText('jdd58fkejgh09lyb');
 
   voice.speaker(voice.SPEAKER.HIKARI).speak('おはようございます', function(e, buf) {
@@ -39,7 +40,7 @@ router.get('/', function(req, res, next) {
 (function() {
   var T;
 
-  T = require('../node_modules2/timbre');
+//  T = require('../node_modules2/timbre');
 
   T = require('timbre');
   (T("audio")).load("test.wav", function() {
