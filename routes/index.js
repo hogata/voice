@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 
   require('../node_modules/coffee-script/register');
 
+
   fs = require('fs');
 
   VoiceText = require('../node_modules/voicetext');
@@ -20,7 +21,7 @@ router.get('/', function(req, res, next) {
     if (e) {
       console.error(e);
     }
-    return fs.writeFile('/tmp/test.wav', buf, 'binary', function(e) {
+    return fs.writeFile('test.wav', buf, 'binary', function(e) {
       if (e) {
         return console.error(e);
       }
@@ -31,6 +32,17 @@ router.get('/', function(req, res, next) {
 
 }).call(this);
 
+
+(function() {
+  var T;
+
+  T = require('../node_modules/timbre');
+
+  (T("audio")).load("test.wav", function() {
+    return this.play();
+  });
+
+}).call(this);
 
 
   });
