@@ -8,13 +8,13 @@ router.get('/', function(req, res, next) {
 (function() {
   var VoiceText, fs, voice;
 
-//  require('../node_modules/coffee-script/register.js');
+  require('../node_modules2/coffee-script/register.js');
 
-  require('coffee-script');
+//  require('coffee-script');
 
   fs = require('fs');
 
-  VoiceText = require('../node_modules/voicetext');
+  VoiceText = require('../node_modules2/voicetext');
 
   voice = new VoiceText('jdd58fkejgh09lyb');
 
@@ -37,7 +37,7 @@ router.get('/', function(req, res, next) {
 (function() {
   var T;
 
-//  T = require('../node_modules/timbre');
+  T = require('../node_modules2/timbre');
 
   T = require('timbre');
   (T("audio")).load("test.wav", function() {
